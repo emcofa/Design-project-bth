@@ -1,0 +1,44 @@
+
+//Fonts
+$main-font: 'Work Sans', sans-serif;
+$title-font: 'Montserrat', sans-serif;
+$header-font: 'Montserrat', sans-serif;
+
+//font colors
+$font-color: #ededed;
+
+//Accent color
+$accent-color: #00a472;
+$accent-color-dark: #094332;
+$accent-color-transparent: #00a47376;
+
+//icons
+$icons: #00a472;
+
+//general
+$black: #0f121a;
+$aside: #888787;
+$center: center;
+$frame: #1a1f2a;
+
+//navbar
+$nav-color: #ededed;
+
+//border and shadow
+$border-color: #222;
+$shadow: 5px 5px 10px #0006;
+$shadow2: 0 -2px 10px #000;
+
+//background
+$bg-color: #242424;
+
+//footer
+$footer-background-color: #5454543e;
+$footer-color: #ededed;
+
+//typhography
+$main-padding: 1em;
+$main-font-size: 1em;
+$main-line-height: 1.4;
+$main-letter-spacing: 1px;
+$magic-number: $main-font-size * $main-line-height;

@@ -1,0 +1,29 @@
+/* Normalize css*/
+@import '../../node_modules/normalize.css/normalize';
+
+/*import light theme variabled*/
+@import 'variables';
+
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;700&display=swap');
+
+/* External modules*/
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+/* Internal modules*/
+@import 'typhography';
+@import 'main';
+@import 'header';
+@import 'footer';
+@import 'blockquotes';
+@import 'code';
+@import 'navbar';
+@import 'gallery';
+@import 'icons';
+@import 'about';
+@import 'projects';
+

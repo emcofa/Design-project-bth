@@ -1,0 +1,25 @@
+.footer {
+    padding: $main-padding;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $border-color;
+    background-color: $footer-background-color;
+}
+
+.footer p {
+    color: $font-color;
+}
+
+.footer a {
+    text-decoration: none;
+    color: $font-color;
+}
+
+.footer a:hover {
+    color: $accent-color;
+}
+
+.footer .social {
+    font-size: 2rem;
+    color: $footer-color;
+}

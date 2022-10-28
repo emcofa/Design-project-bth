@@ -1,0 +1,29 @@
+/* Normalize css*/
+@import '../../node_modules/normalize.css/normalize';
+
+/*import dark theme variables*/
+@import 'variables-dark';
+
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300');
+
+/* External modules*/
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+/* Internal modules*/
+@import 'typhography';
+@import 'main-dark';
+@import 'header';
+@import 'footer';
+@import 'blockquotes';
+@import 'code';
+@import 'navbar';
+@import 'only-dark';
+@import 'icons-dark';
+@import 'gallery-dark';
+@import 'about';
+@import 'projects';

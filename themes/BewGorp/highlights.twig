@@ -1,0 +1,21 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main2">
+        <h2 class="center accent-background">Highlights.</h2>
+        {{ content }}
+
+        <div class="gallery-container">
+            {% for page in pages("highlights") %}
+            <a href="{{ page.url }}" aria-label="highlights">
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

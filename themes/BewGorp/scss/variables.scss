@@ -1,0 +1,44 @@
+
+//Fonts
+$main-font: 'Lora', serif;
+$title-font: 'Roboto', sans-serif;
+$header-font: 'Roboto', sans-serif;
+
+//font colors
+$font-color: #101010;
+
+//Accent color
+$accent-color: #c75a2b;
+$accent-color-dark: #945136;
+
+//icons
+$icons: #222;
+
+//general
+$black: #0f121a;
+$aside: #848484;
+$center: center;
+$frame: #f9f9f9;
+
+//navbar
+$nav-color: #bfb4a5;
+
+
+//border and shadow
+$border-color: #222;
+$shadow: 20px 30px -10px #26394d;
+$shadow2: #0000003d 1px 3px 8px;
+
+//background
+$bg-color: #e7e2d7;
+
+//footer
+$footer-background-color: #22222259;
+$footer-color: #bfb4a5;
+
+//typhography
+$main-padding: 1em;
+$main-font-size: 1em;
+$main-line-height: 1.4;
+$main-letter-spacing: 1px;
+$magic-number: $main-font-size * $main-line-height;

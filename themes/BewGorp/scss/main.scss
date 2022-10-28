@@ -1,0 +1,104 @@
+body {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+    background-image: url('../../../assets/img/Grey.jpg');
+}
+
+.main {
+    flex: 1 0 auto;
+    width: 100%;
+    margin: 2em auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none !important;
+}
+
+.row-index {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+.column-1 {
+    columns: 1 500px;
+    column-gap: 5em;
+    margin: 2em auto 7em;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.left {
+    text-align: left;
+}
+
+.column-index {
+    padding: $main-padding;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-left: 6px solid $accent-color;
+}
+
+.logo-index img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:
+    15px -15px 0 -5px $frame,
+    15px -15px 0 0 $border-color;
+    transition: box-shadow ease-in 150ms;
+}
+
+.center {
+    text-align: $center;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+.row-index::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 1072px) {
+    .main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column-index {
+        grid-column: span 2;
+        width: 90%;
+    }
+
+    .logo-index img {
+        width: 80%;
+    }
+}

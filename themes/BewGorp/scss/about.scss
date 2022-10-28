@@ -1,0 +1,57 @@
+.row-about {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.half {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: $magic-number;
+    margin-top: $magic-number;
+    text-align: $center;
+}
+
+.column-about {
+    flex: 20%;
+    max-width: 100%;
+    padding: 0 4px;
+    position: relative;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.row-about::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.hidden-link {
+    margin-left: $main-padding;
+}
+
+.hidden-link:hover {
+    color: $accent-color;
+}
+
+.documentation {
+    text-align: center;
+    padding: $main-padding;
+}
+
+@media screen and (max-width: 500px) {
+    .column-about {
+        grid-column: span 3;
+        width: 60%;
+    }
+    
+    .half {
+        width: 80%;
+    }
+}

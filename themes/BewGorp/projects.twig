@@ -1,0 +1,25 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="row-index-project">
+        <div class="content-box">
+            <div class="aside">
+            <h2 class="center aside">Other projects</h2>
+            <ul style="list-style-type:none;">
+                {% for page in pages("highlights") %}
+                <li><a href="{{ page.url }}">
+                        {{ page.title }}
+                    </a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+        {{ content }}
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+.row-index-project {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    position: relative;
+    text-align: $center;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-index-project::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.content-box {
+    max-width: 100%;
+    padding: 0 4px;
+    position: relative;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    justify-self: center;
+}
+
+.content-box a:hover {
+    color: $accent-color;
+    transform: scale(0.9);
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.content-box a {
+    font-family: $header-font;
+    display: inline-block;
+    transition-duration: 0.3s;
+    color: $aside;
+}
+
+.pic {
+    text-align: center;
+}
+
+.aside {
+    color: $aside;
+}
+
+.content-box {
+    padding: $main-padding;
+    text-align: left;
+    width: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .row-index-project {
+        padding: $main-padding;
+        justify-items: center;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content-box {
+        grid-column: span 3;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pic {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 937px) {
+    .project .side-box {
+        display: none !important;
+    }
+}

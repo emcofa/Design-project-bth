@@ -1,0 +1,46 @@
+body {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+    background-image: url('../../../assets/img/bg-dark.jpg');
+    background-position: right;
+    filter: brightness(80%);
+}
+
+.header {
+    background-image: url('../../../assets/img/dark.jpg');
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: solid 1px $border-color;
+}
+
+.logo-index img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:
+    15px -15px 0 -5px $frame,
+    15px -15px 0 0 $accent-color;
+    transition: box-shadow ease-in 150ms;
+}
+
+.logo {
+    filter: grayscale(100%);
+}
+
+.nav a {
+    display: inline-block;
+    transition-duration: 0.3s;
+    color: $nav-color;
+
+    &:hover {
+        transform: scale(0.9);
+        color: $accent-color;
+        transition: all 0.5s ease;
+    }
+}
+

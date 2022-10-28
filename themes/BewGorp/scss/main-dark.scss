@@ -1,0 +1,99 @@
+body {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+    background-image: url('../../../assets/img/Grey.jpg');
+}
+
+.main {
+    flex: 1 0 auto;
+    width: 100%;
+    margin: 2em auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.hide-this {
+    display: none !important;
+}
+
+.row-index {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+}
+
+.column-1 {
+    columns: 1 500px;
+    column-gap: 5em;
+    column-rule-width: 4px;
+    margin: 2em auto 7em;
+}
+
+.left {
+    text-align: left;
+}
+
+.column-index {
+    padding: $main-padding;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.center {
+    text-align: $center;
+}
+
+.accent-background {
+    background-color: $accent-color-transparent;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+.row-index::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.frame {
+    border: solid 6px $accent-color;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 1072px) {
+    .main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column-index {
+        grid-column: span 3;
+        width: 60%;
+    }
+
+    .logo-index img {
+        width: 90%;
+    }
+}
